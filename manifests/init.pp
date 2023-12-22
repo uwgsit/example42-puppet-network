@@ -310,8 +310,9 @@ class network (
   }
 
   # Command that triggers network restart
-  exec { 'network_restart' :
+  exec { $service_restart_exec:
     command     => $service_restart_exec,
+    alias       => 'network_restart',
     refreshonly => true,
     path        => '/bin:/sbin:/usr/bin:/usr/sbin',
   }
