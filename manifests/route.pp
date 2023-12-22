@@ -107,7 +107,7 @@ define network::route (
   Array $netmask,
   Optional[Array] $gateway   = undef,
   Optional[Array] $metric    = undef,
-  Opitional[Integer] $mtu       = undef,
+  Optional[Integer] $mtu       = undef,
   Optional[Array] $scope     = undef,
   Optional[Array] $source    = undef,
   Optional[Array] $table     = undef,
